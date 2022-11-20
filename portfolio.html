@@ -301,7 +301,7 @@
     <!--Підвал-->
     
     <footer>
-      <div class="container qwerty">
+      <div class="container footer-con">
         <div class="main-information">
           <a href="./index.html" class="logo footer"
             ><span class="logo-blue">Web</span
@@ -378,12 +378,12 @@
         <div>
           <p class="main-plus">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
 
-           <ul class="plus-email">
-             <li class="email-plus">
+           <form class="plus-email">
+             <div class="email-plus">
               <label class="plus-email-footer" for="email-footer"></label>
               <input class="footer-emaile-line" type="email" name="email" id="email-footer" placeholder="E-mail">
-              </li>
-             <li>
+              </div>
+             <div>
                <button class="button button-plus">Підписатися
                  <svg
                  class="svg-plus-button"
@@ -396,12 +396,14 @@
                    </use>
                  </svg>
                </button>
-              </li>
-            </ul>
-        </div>
+              </div>
+            </div>
+        </form>
 
       </div>
     </footer>
+
+        
    
   </body>
 </html>

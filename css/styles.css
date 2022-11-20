@@ -59,7 +59,6 @@ a{
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .button{
@@ -222,6 +221,7 @@ footer{
 footer .container{
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 footer .main-information{
     margin-right: 70px;
@@ -326,6 +326,19 @@ footer .footer-adress .adress:focus{
     border-style: solid; 
     border-color: var(--border-email-color-plus);
     border-radius: 4px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: var(--adress-color);
+}
+.footer-emaile-line:hover,
+.footer-emaile-line:focus{
+    outline: var(--border-email-color-plus);
 }
 .plus-email ::placeholder{
     font-family: 'Roboto';
@@ -445,8 +458,8 @@ footer .footer-adress .adress:focus{
         0px 1px 1px rgba(0, 0, 0, 0.14), 
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    width: 528px;
-    height: 581px; 
+    width: 530px;
+    height: 550px; 
     background-color: var(--background-modal-window);
     transition: transform 250ms var(--timing-function);
     padding: 40px;
@@ -490,6 +503,7 @@ footer .footer-adress .adress:focus{
 .field:hover,
 .field:focus{
     border-color: var(--rgba-logo-blue);
+    outline: var(--rgba-logo-blue);
 }
 
 .field-text{
@@ -505,6 +519,15 @@ footer .footer-adress .adress:focus{
     fill:var(--fill-modal);
     position: relative;
     transition: border-color 250ms var(--timing-function);
+    
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    /* color: var(--rgba-form); */
 }
 .comment.field{
     min-height: 120px;
@@ -515,8 +538,10 @@ footer .footer-adress .adress:focus{
     margin-bottom: 20px;
 }
 .terms-field{
+    /* display: block; */
     text-align: left;
     margin-bottom: 30px;
+    padding-left: 10px;
 }
 .terms-link{
     color: var(--background-animation);
@@ -546,6 +571,7 @@ footer .footer-adress .adress:focus{
     border-style: solid;
     border-color: var(--h-text-color);
     border-radius: 3px;
+
 }
 
 .comment-form-field ::placeholder{
